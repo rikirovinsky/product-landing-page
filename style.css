@@ -1,100 +1,54 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
 
 :root {
-  --main: #4eb170;
-  --font: #b14e8f;
+  --mainBackground: #427bb9;
+  --font: #d2e1e8;
+  --secondaryBackground: #b8deb8;
 }
 
 body {
   font-family: "Spartan", sans-serif;
   color: var(--font);
-  background-color: var(--main);
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-}
-
-#main {
+  background-color: var(--mainBackground);
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
-  box-sizing: border-box;
-  padding: 2em 1em;
+
   height: 100vh;
+  box-sizing: border-box;
+  padding: 2em;
 }
 
-#title {
-  text-align: center;
-  width: 100%;
-  font-size: 1.5em;
-  line-height: 1em;
-  padding: 1em;
-}
-
-#description {
-  text-align: justify;
-  width: 90%;
-  padding-bottom: 0.5em;
-  font-size: 0.75em;
-}
-
-#survey-form {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  max-width: 90%;
-  padding-bottom: 1em;
-}
-
-.form-input-wrapper {
-  width: 90%;
-  padding: 0.5em;
+#header {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  max-width: 100%;
+  z-index: 100;
 }
 
-.form-input-wrapper > label {
-  font-size: 0.75em;
-  flex: 1 1 50%;
-  padding-right: 0.5em;
-}
+#nav-bar {
 
-.form-input-wrapper > input {
-  font-size: 0.75em;
-  flex: 1 1 50%;
 }
+ #header-img {
 
-#topic {
-  font-size: 0.75em;
-  display: flex;
-  flex-flow: column;
-  align-items: flex-end;
-}
+ }
 
-#newsletter {
-  font-size: 0.75em;
-  display: flex;
-  flex-flow: column;
-  align-items: flex-end;
-}
 
-button {
-  font-size: 0.75em;
-  background-color: var(--font);
-  color: var(--main);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  border-radius: 20px;
-  height: 4em;
-  width: 5em;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-}
+/* 
+id="header"
+id="nav-bar"
+id="" 
+class="links">
+id="video"
+id="form" 
+id="name-label"
+id="name"
+id="email-label
+id="email"
+id="submit"
+ */
 
 #bottom-link {
   font-size: 0.5em;
@@ -103,13 +57,5 @@ button {
 @media only screen and (min-width: 768px) {
   body {
     font-size: 1.75em;
-  }
-
-  #description {
-    max-width: 1100px;
-  }
-
-  #survey-form {
-    max-width: 60%;
   }
 }
