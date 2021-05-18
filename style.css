@@ -21,6 +21,9 @@ body {
 #header {
   display: flex;
   flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
@@ -29,12 +32,14 @@ body {
 }
 
 #nav-bar {
-
+  display: flex;
+  flex-flow: row nowrap;
+  flex: 1 1 50%;
 }
- #header-img {
 
- }
-
+#header-img {
+  flex: 1 1 50%;
+}
 
 /* 
 id="header"
