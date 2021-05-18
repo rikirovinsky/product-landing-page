@@ -5,22 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="resetstyle.css" />
     <link rel="stylesheet" href="style.css" />
-
-    <title>Richard Rovinsky | Tribute page</title>
+    <title>Richard Rovinsky | Product landing page</title>
   </head>
   <body>
     <header id="header">
-        <div>
-          <img id="header-img" src="./images/logo.jpg"></img>
-        </div>
+      <img id="header-img" src="./images/logo.jpg"></img>
       <nav id="nav-bar">
-          <a href="#header" class="nav-link">Top</a>
-          <a href="#video" class="nav-link">Video</a>
-          <a href="#form" class="nav-link">Form</a>
+        <a href="#video" class="nav-link">Video</a>
+        <a href="#form" class="nav-link">Form</a>
+        <a href="#bottom-link" class="nav-link">Links</a>
       </nav>
     </header>
     <main>
-      <video id="video" src="/images/nature.mov" controls></video>
+    <div class="wrapper">
+      <h2>Meadow near Kosice, where you can experience true nature!</h2>
+      <video id="video" src="/images/nature.mp4" controls></video>
+    </div>
+    <div class="wrapper">
+      <h2>To receive monthly newsletters about upcoming trips, fill in form below.</h2>
       <form id="form" action="mailto:https://www.freecodecamp.com/email-submit" method="post">
         <label for="name" id="name-label">name: </label>
         <input
@@ -38,9 +40,9 @@
           placeholder="example@example.com"
           pattern="*@*.*"
         />
-        <input id="submit" type="submit" value="Send">
-          </form>
+        <input id="submit" type="submit" value="Send"/>
       </form>
+    </div>
     </main>
     <footer>
       <p id="bottom-link">
@@ -53,6 +55,6 @@
         >.
       </p>
     </footer>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
